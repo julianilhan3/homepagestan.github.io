@@ -33,6 +33,21 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+.bg-recommended {
+  background-color: #ff6332;
+}
+
+.bg-mostwanted {
+  background-color: #e20808;
+}
+
+.bg-popular {
+  background-color: #ff9432;
+}
+.bg-footer {
+  background-color: #030322;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -386,12 +401,8 @@ h6 {
   width: 100%;
   height: 80vh;
   position: relative;
-  z-index: 999;
+  z-index: 1;
   background-image: url(assets/img/01bg.webp);
-}
-
-#hero .container {
-  padding-top: 72px;
 }
 
 #hero h1 {
@@ -399,7 +410,7 @@ h6 {
   font-size: 52px;
   font-weight: 700;
   line-height: 56px;
-  color: #001139;
+  color: white;
 }
 
 #hero h2 {
@@ -415,11 +426,11 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
-  border-radius: 10px;
+  border-radius: 30px;
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #0327a7;
+  background-image: linear-gradient(#ff9431, #d06706);
 }
 
 #hero .btn-get-started:hover {
@@ -447,6 +458,9 @@ h6 {
 
 #hero .btn-watch-video:hover i {
   color: #47b2e4;
+}
+#hero p {
+  color: white;
 }
 
 #hero .animated {
@@ -512,6 +526,53 @@ h6 {
   }
 }
 
+@media (max-width: 416px) {
+  .benerfits .container img {
+    margin: auto;
+  }
+  #hero {
+    padding-top: 400px;
+    padding-bottom: 460px;
+  }
+}
+.paket-program .kode-promo {
+  background-color: #e20808;
+  width: 30%;
+  margin-top: -32px;
+  border-radius: 30px;
+  color: white;
+  margin: auto;
+}
+.accordion .card-header:after {
+  font-family: "FontAwesome";
+  content: "\f068";
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\f067";
+}
+
+.media .accordion .card-header {
+  background-color: none;
+}
+
+@media (max-width: 416px) {
+  .paket-program {
+    margin-top: -10px;
+  }
+  .paket-program h3 {
+    margin-top: 180px;
+  }
+  .paket-program .kode-promo {
+    width: 95%;
+  }
+  #hero {
+    padding-top: 400px;
+    padding-bottom: 460px;
+  }
+}
+
 @keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -531,23 +592,24 @@ h6 {
 --------------------------------------------------------------*/
 
 .benerfits .container {
+  margin-left: 120px;
   margin-top: -120px;
-  margin-bottom: 64px;
   z-index: 999;
   position: absolute;
-  padding: 16px;
-  margin-left: 120px;
   border-radius: 90px;
+  text-align: center;
   justify-content: space-between;
   justify-content: center;
-  background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
-    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 
 .benerfits h4 {
-  color: #240029;
-  font-weight: 700;
+  color: #140040;
+  font-weight: 800;
+  font-family: "Poppins";
+}
+.benerfits p {
+  color: #140040;
+
   font-family: "Poppins";
 }
 
@@ -562,6 +624,9 @@ h6 {
   .benerfits .container {
     margin: 0;
     margin-top: px;
+  }
+  .video-iklan {
+    margin-top: -32px;
   }
 }
 
@@ -650,6 +715,66 @@ h6 {
 }
 .testimoni .card-testimoni .user img {
   display: inline;
+}
+
+.media .kode-promo {
+  background-image: linear-gradient(#ff9431, #d06706);
+  width: 40%;
+
+  border-radius: 30px;
+  color: white;
+  margin: auto;
+}
+
+.faq h1 {
+  font-size: 100px;
+  color: white;
+}
+.faq h5 {
+  color: white;
+  margin-bottom: 32px;
+}
+
+#wrapper .slick-dots li button:before {
+  margin-top: 12px;
+  content: "\f111" !important;
+  height: 70% !important;
+  width: 70% !important;
+  background-color: #ffa800;
+  border-radius: 90px;
+}
+
+.why-us h3 {
+  font-weight: 800;
+  color: #000a0f;
+}
+
+.why-us p {
+  color: #000a0f;
+  text-align: justify;
+}
+.privilage .judul {
+  color: #000a0f;
+  font-weight: 800;
+  font-size: 32px;
+  font-family: "Raleway";
+}
+.privilage p {
+  margin-top: 15px;
+  margin-bottom: 31px;
+}
+
+.solusi .judul {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 800;
+}
+.solusi p {
+  color: white;
+  font-family: "Poppins";
+}
+.solusi .not-easy {
+  height: 320px;
 }
 
 section {
